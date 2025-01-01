@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+     <link rel="stylesheet" href="{{url_for('static',filename='css/view.css')}}">
+    <title>View Marks</title>
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <table>
+        <tr>
+            <th>Exam Type</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        {% for mark in marks %}
+        <tr>
+            <td>{{ mark.exam.exam_type }}</td>
+            <td>{{ mark.exam.subject }}</td>
+            <td>{{ mark.marks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

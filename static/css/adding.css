@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    background-image: url('/static/images/adding1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+form input{
+    background-color: white;
+    color: black;
+    font-size: x-large;
+}
+body h2{
+    color: red;
+}
+body a{
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+           <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>LOGINS</h2>
+    <div class="login_des">
+    <form method="post" action="/admin_login">
+        <label><h3>Admin Login:</h3></label><br>
+        <input type="text" name="username" placeholder="admin name"><br><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
+        <button class="btn btn-primary" type="submit">Login as Admin</button><br><br>
+    </form>
+    <form method="post" action="/teacher_login">
+        <label><h3>Teacher Login:</h3></label><br>
+        <input type="text" name="name" placeholder="Teacher Name"><br><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
+        <button class="btn btn-primary" type="submit">Login as Teacher</button><br><br>
+    </form>
+    <form method="post" action="/student_login">
+        <label><h3>Student Login:</h3></label><br>
+        <input type="text" name="student_id" placeholder="Student ID"><br><br>
+        <input type="text" name="name" placeholder="Student Name"><br><br>
+        <button class="btn btn-primary" type="submit">Login as Student</button><br>
+    </form>
+</div>
+</body>
+</html>

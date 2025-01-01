@@ -1,0 +1,48 @@
+/* body{
+    background-image: url('/static/images/colour.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+} */
+
+body h2, body h1{
+    text-align: center;
+    color: red;
+}
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    color:black;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    font-size: medium;
+    font-weight:bold;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+body a{
+    color: black;
+    background-color: white;
+}
+body h4{
+    text-align: right;
+}
+body h3{
+    text-align: right;
+}
+body a{
+    background-color: black;
+    color: white;
+}
